@@ -25,3 +25,4 @@ Route::get('ajaxdata.removedata','AjaxdataController@removedata')->name('aj.remo
 Route::get('ajaxdata.massremove','AjaxdataController@massremove')->name('aj.massremove');
 Route::get('/uploadfile','Uploadfilecontroller@index');
 Route::post('/uploadfile','Uploadfilecontroller@upload');
+Route::get('/main','MainController@index');
