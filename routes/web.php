@@ -26,3 +26,4 @@ Route::get('ajaxdata.massremove','AjaxdataController@massremove')->name('aj.mass
 Route::get('/uploadfile','Uploadfilecontroller@index');
 Route::post('/uploadfile','Uploadfilecontroller@upload');
 Route::get('/main','MainController@index');
+Route::get('/email_available','EmailAvailable@index');
