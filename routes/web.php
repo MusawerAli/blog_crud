@@ -27,3 +27,4 @@ Route::get('/uploadfile','Uploadfilecontroller@index');
 Route::post('/uploadfile','Uploadfilecontroller@upload');
 Route::get('/main','MainController@index');
 Route::get('/email_available','EmailAvailable@index');
+Route::post('/email_available/check','EmailAvailable@check')->name('email_available.check');

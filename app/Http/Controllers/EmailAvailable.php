@@ -17,9 +17,15 @@ class EmailAvailable extends Controller
         if($request->get('email'))
         {
             $email = $request->get('email');
-            $data = DB::table('tbl_login')
+            $data = DB::table('users')
                     ->where('email',$email)
                     ->count();
+
+            if($data > 0){
+                echo "not unique";
+            }else{
+                echo "unique";
+            }
         }
     }
 }

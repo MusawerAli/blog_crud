@@ -68,7 +68,7 @@ $(document).ready(function(){
         else
         {
             $.ajax({
-                url:"{{route('email_available.check)}}",
+                url:"{{route('email_available.check')}}",
                 method:"POST",
                 data:{email:email,_token:_token},
                 success:function(result)
